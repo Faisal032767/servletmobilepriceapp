@@ -1,4 +1,4 @@
-create this two in your "mydb1" database
+create this two table in your "mydb1" database
  
 1.	create table logintab(username varchar(30),email varchar(30),password varchar(30));
 

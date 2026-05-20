@@ -1,0 +1,105 @@
+    .why-p{
+        color: rgb(255, 255, 255,.7);
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2.5em;
+    background-color: rgb(24, 28, 17);
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 0,.1);
+    text-transform: capitalize;
+    }
+  
+  #details-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    /* background-color: blue; */
+
+  }
+  details {
+    background-color: red;
+    width: 90%;
+    max-height: 63px;
+    min-height: 60px;
+    border: 1px solid rgb(255, 255, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(218, 11, 11, 0.1);
+    overflow: hidden;
+    transition: min-height 5s linear;
+    box-shadow: 0px -5px 15px 1px rgb(78, 60, 60,.2);
+
+  }
+  details[open] {
+    max-height: 200px;
+    transition: all 2s ease;
+  }
+
+  details summary {
+    margin: 10px 0px 0px 20px;
+
+    font-size: 1.4em;
+    cursor: pointer;
+    list-style: none;
+    color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    text-indent: 10px;
+  }
+
+  #details-parent p {
+    /*			background-color: red;*/
+
+    color: rgb(255, 255, 0,.5);
+
+    margin: 10px 20px 20px 20px;
+    box-sizing: border-box;
+    height: auto;
+    text-align: justify;
+    text-justify: distribute;
+    padding: 5px 40px;
+    font-size: 1.3em;
+    
+
+  }
+
+  details summary::after {
+    content: "^";
+    font-size: 1em;
+
+    transform: rotate(180deg);
+    text-indent: 60px;
+    font-weight: bolder;
+  }
+
+  
+ @media screen and (min-width: 320px) and (max-width: 480px) {
+    
+  .why-p{
+    font-size: 1.5em;
+  }
+  #details-parent p{
+    font-size: 1em;
+    margin: 0;
+    padding: 0px 20px;
+  }
+
+
+  details summary{
+   
+ font-size: 1em;
+  text-indent: 0px;
+  height:50px;
+  line-height: 50px;
+  margin-left: 5px;
+    
+  }
+
+  details summary::after {
+    text-indent: 20px;
+  }
+}
+
+  

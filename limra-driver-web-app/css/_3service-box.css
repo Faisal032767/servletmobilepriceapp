@@ -1,0 +1,308 @@
+.our-serv{
+    /* color: white; */
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2.5em;
+    /* background-color: rgb(24, 24, 61); */
+    width: 90%;
+    border-radius: 3px;
+    /* border: 1px solid rgb(255, 255, 0,.4); */
+    background-color: rgb(24, 28, 17);
+    border: 1px solid rgb(255, 255, 0,.1);
+    color: rgb(255, 255, 255,.7);
+
+
+
+}
+
+
+.box-container {
+  width: 90%;
+  height: 550px;
+  background-color: rgb(255, 0, 0,.1);
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  align-content: space-evenly;
+  column-gap: 20px;
+  border-radius: 5px;
+
+}
+.box {
+  background-color: rgb(40, 35, 58);
+  border: 1px solid rgb(255, 255, 255,.4);
+  flex-basis: 25%;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+/* .box1,.box2,.box3,.box7,.box8,.box9{
+    height: 100px; 
+     height: 20px;
+}
+ */
+
+.box4,
+.box5,
+.box6,
+.box10,
+.box11,
+.box12 {
+  height: 210px;
+}
+
+/* 
+
+
+*/
+.box-container p {
+  padding: 0;
+  /* margin: 0; */
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  /* padding: 5px; */
+  margin: 5px;
+  color: rgb(255, 255, 255,.8);
+  font-size: 1.3em;
+}
+
+.box4 {
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 0.5),
+      rgb(148, 106, 106, 0.2),
+      rgb(32, 21, 21, 0.5)
+    ),
+    url(../image/box4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box5 {
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 0.5),
+      rgb(148, 106, 106, 0.5),
+      rgb(32, 21, 21, 0.5)
+    ),
+    url(../image/box5vallet.avif);
+  background-position: center;
+  background-size: cover;
+}
+
+.box6 {
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 0.5),
+      rgb(148, 106, 106, 0.3),
+      rgb(32, 21, 21, 0.5)
+    ),
+    url(../image/box12.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box10 {
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 0.5),
+      rgb(148, 106, 106, 0.3),
+      rgb(32, 21, 21, 0.5)
+    ),
+    url(../image/box10.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box11 {
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 0.5),
+      rgb(148, 106, 106, 0.5),
+      rgb(32, 21, 21, 0.5)
+    ),
+    url(../image/box11RentalCarLG.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box12 {
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 0.5),
+      rgb(148, 106, 106, 0.5),
+      rgb(32, 21, 21, 0.5)
+    ),
+    url(../image/box6.png);
+  background-position: center;
+  background-size: cover;
+}
+/* media query1 */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .box {
+    /* background-color: green; */
+    flex-basis: 35%;
+    row-gap: 10px;
+  }
+
+  .box-container {
+    height: max-content;
+  }
+
+  .box1 {
+    order: -15;
+  }
+
+  .box2 {
+    order: -14;
+  }
+
+  .box4 {
+    order: -13;
+  }
+
+  .box5 {
+    order: -12;
+  }
+
+  .box3 {
+    order: -11;
+  }
+
+  .box7 {
+    order: -10;
+  }
+
+  .box6 {
+    order: -9;
+  }
+
+  .box10 {
+    order: -8;
+  }
+
+  .box8 {
+    order: -7;
+  }
+
+  .box9 {
+    order: -6;
+  }
+}
+
+/* ------------------------------------ */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .our-serv{
+    font-size: 1.5em;
+  }
+  
+  .box {
+    /* background-color: blue; */
+    flex-basis: 70%;
+    row-gap: 10px;
+  }
+  .box-container {
+    height: max-content;
+  }
+
+  .box-container p{
+    font-size: 1.1em;
+  }
+
+  .box1 {
+    order: -15;
+  }
+
+  .box4 {
+    order: -14;
+  }
+
+  .box2 {
+    order: -13;
+  }
+
+  .box5 {
+    order: -12;
+  }
+
+  .box3 {
+    order: -11;
+  }
+
+  .box6 {
+    order: -10;
+  }
+
+  .box7 {
+    order: -9;
+  }
+
+  .box10 {
+    order: -8;
+  }
+
+  .box8 {
+    order: -7;
+  }
+
+  .box11 {
+    order: -6;
+  }
+}
+/* ====================================================== */
+@media screen and (max-width: 319px) {
+  .box {
+    /* background-color: rgb(102, 255, 0); */
+    flex-basis: auto;
+    row-gap: 10px;
+  }
+  .box-container {
+    height: auto;
+  }
+
+  
+
+  .box1 {
+    order: -15;
+  }
+
+  .box4 {
+    order: -14;
+  }
+
+  .box2 {
+    order: -13;
+  }
+
+  .box5 {
+    order: -12;
+  }
+
+  .box3 {
+    order: -11;
+  }
+
+  .box6 {
+    order: -10;
+  }
+
+  .box7 {
+    order: -9;
+  }
+
+  .box10 {
+    order: -8;
+  }
+
+  .box8 {
+    order: -7;
+  }
+
+  .box11 {
+    order: -6;
+  }
+}

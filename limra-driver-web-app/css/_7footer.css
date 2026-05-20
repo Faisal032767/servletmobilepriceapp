@@ -1,0 +1,116 @@
+footer{
+   
+    width: 90%;
+    height: max-content;
+    /* height: 450px; */
+    /* background-color: rgb(48, 22, 22); */
+    /* box-shadow: 0px -5px 15px 1px rgb(78, 60, 60,.2); */
+
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    border-radius: 5px;
+
+}
+.foot{
+    background-color: rgb(38, 38, 87,.4);
+    flex-basis: 25%;
+    border-radius: 5px;
+    box-shadow: 0px -5px 15px 1px rgba(18, 12, 12, 0.2);
+
+
+    
+}
+.foot ul{
+    margin: 0;
+    list-style: none;
+}
+
+.foot ul li{
+    margin-left: 20px;
+}
+
+.foot ul li p{
+    margin-top: 20px;
+
+    font-size: 1.4em;
+    color: red;
+    text-decoration: underline;
+}
+
+.foot ul li+li{
+    padding: 15px 0px;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255,.6);
+    cursor: pointer;
+}
+
+.foot ul li+li a{
+    color: rgb(255, 255, 255,.6);
+    text-decoration: none;
+
+
+}
+/*  */
+
+/* ------------------------------------------------------------------ */
+
+ @media screen and (min-width:481px) and (max-width:767px){
+    
+    footer{
+        /* background-color: rgb(6, 6, 15); */
+        
+        height: max-content;
+    }
+    .foot{
+        flex-basis: 1%;
+        flex-grow: 1;
+    }
+   
+    .foot ul{
+        padding: 5px 15px;
+    }
+    .foot ul li p{
+        font-size: 1.2em;
+    }
+
+    .foot ul li+li{
+   
+    font-size: 1em;
+    }
+
+
+ }
+/*  */
+
+@media screen and (min-width:301px) and (max-width:480px){
+    
+    footer{
+        background-color: rgb(6, 6, 15);
+        
+        height: max-content;
+    }
+    .foot{
+        flex-basis: 1%;
+        flex-grow: 1;
+    }
+   
+    .foot ul{
+        padding: 5px;
+    }
+    .foot ul li p{
+        font-size: 1em;
+    }
+
+    .foot ul li+li{
+    padding: 2px;
+    font-size: .6em;
+   
+    
+}
+
+
+
+ }

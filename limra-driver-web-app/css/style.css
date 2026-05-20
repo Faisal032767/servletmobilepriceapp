@@ -1,0 +1,195 @@
+@import url(./_1site.css);
+@import url(./_2imgslide.css);
+@import url(./_2img-slideHide.css);
+@import url(./_3service-box.css);
+@import url(./_4detail-sum-why.css);
+@import url(./_5price.css);
+@import url(./_6feedback.css);
+@import url(./_7footer.css);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+scroll-behavior: smooth;
+
+
+}
+
+/* .fa-square-whatsapp{
+  color: rgb(255, 255, 255,.7);
+    
+    font-size: 5.5em;
+      position: fixed;
+      top: 90%;
+      left: 92%;    
+      z-index: 11;
+      
+} */
+
+nav {
+  height: 50px;
+  background-color: rgb(24, 28, 17);
+  /* border: 1px solid rgb(255, 255, 0,.1); */
+  color: rgb(255, 255, 255,.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 2px;
+
+ 
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+.logo{
+  /* background-color: green; */
+  width: 70px;
+  height: 70%;
+}
+
+.logo img{
+  border-radius: 50px;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+.nav-container {
+  /* border: 1px solid red; */
+  width: 80%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* padding: 0px 20px; */
+}
+
+.nav-container a {
+  padding: 0px 20px;
+  color: rgb(255, 255, 255, 0.8);
+  height: 70%;
+
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.2em;
+  /* border: 1px solid rgb(255, 255, 0, 0.5); */
+  margin: 0px 5px;
+}
+
+.nav-container a:hover {
+  /* background-color: rgb(17, 17, 28); */
+    background-color: rgb(42, 42, 186);
+
+  color: white;
+}
+
+.fa-solid {
+  color: blue;
+}
+
+.fa-solid,
+#check {
+  display: none;
+}
+
+/* @media screen and (min-width: 300px) and (max-width: 480px) */
+
+
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .container{
+    display: none;
+  }
+
+  .child{
+    font-size: 1.5em;
+   }
+
+  .swiper-slide-show{
+    display: block;
+    height: 200px;
+  }
+  nav {
+    /* background-color: rgb(49, 24, 99); */
+    justify-content: space-evenly;
+    justify-content: end;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  .nav-container {
+    background-color: rgb(125, 55, 55, 0.4);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+
+    align-items: start;
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    width: 200px;
+    height: 65vh;
+    height: max-content;
+    border-radius: 10px;
+    padding: 0px;
+    justify-content: flex-start;
+    padding: 20px;
+    transition: all 1s ease;
+  }
+
+  #check:checked ~ .nav-container {
+    right: 0;
+    transition: all 1s ease;
+    z-index: 1000;
+    height: 100%;
+  }
+
+  .nav-container a {
+    color: rgb(255, 255, 255, 0.5);
+    border: none;
+    height: 10%;
+    margin: 10px 0px;
+  }
+
+  .fa-solid {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-right: 200px;
+    /* background-color: red; */
+    font-size: 1.5em;
+    /* text-align: center; */
+  }
+
+  .three-lines {
+    margin-right: 10px;
+  }
+}
+
+ @media screen and (min-width: 300px) and (max-width: 500px){
+ .child{
+  font-size: 1.3em;
+ }
+
+ .swiper-slide-show{
+  height: 150px;
+ }
+
+ }

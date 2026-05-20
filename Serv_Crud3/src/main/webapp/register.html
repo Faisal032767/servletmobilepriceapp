@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(31, 31, 31);
+        display: grid;
+        place-items: center;
+      
+      }
+      .container{ 
+        height: 80vh;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+     
+
+    }
+
+      table {
+        border: 1px solid rgb(255, 255, 255,.4);
+        padding: 10px;
+        font-size: 1.2em;
+        width: 450px;
+        border-radius: 10px;
+         margin-top: 10px;
+        
+      }
+
+      table tr {
+        border-collapse: collapse;
+        background-color: rgb(30, 25, 36);
+        border-radius: 100px;
+      }
+
+      table tr td {
+        /* border: 1px solid white; */
+        border-radius: 5px;
+        padding: 10px;
+        border-collapse: collapse;
+      }
+      button {
+        all: unset;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+      }
+
+      table tr:last-of-type {
+        /* background-color: blue; */
+        text-align: center;
+      }
+      button,
+      a {
+        width: 100px;
+        background-color: rgb(44, 58, 26);
+        padding: 8px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+       
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      button:hover{
+        background-color: rgb(0, 0, 255,.4);
+      }
+      a:hover{
+        background-color: rgb(0, 0, 255,.4);
+      }
+
+      input {
+        outline: none;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        background-color: rgb(18, 20, 49);
+        color: white;
+        font-size: .8em;
+        
+      }
+      label {
+        color: white;
+        
+      }
+
+      input::placeholder {
+        color: rgb(255, 255, 255, 0.5);
+        
+        text-transform: capitalize;
+      }
+
+      table tr td:first-of-type {
+        text-indent: 10px;
+      }
+      h1{
+        text-align: center;
+        color: white;
+      }
+
+      table tr td:last-of-type {
+        
+        text-align: center;
+      }
+      #home{
+        display: inline-block;
+        text-align: right;
+        width: 700px;
+        color: rgb(255, 255, 255,.6);
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="main1.html" id="home">Home</a>
+   <form action="registerServ">
+    <div class="container">
+
+      <h1>Register</h1>
+     
+
+  <table>
+    
+
+    <tr>
+      <td><label for="">UserName</label></td>
+      <td><input type="text" name="username" placeholder="username" required /></td>
+    </tr>
+
+    <tr>
+      <td><label for="email">E-mail</label></td>
+      <td><input type="email" name="email" placeholder="email" required /></td>
+    </tr>
+
+    <tr>
+      <td><label for="password">Password</label></td>
+      <td>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+      </td>
+    </tr>
+
+  
+    <tr>
+      <td colspan="2">
+        <button>Submit</button>
+        <a href="login.html">Login</a>
+      </td>
+    </tr>
+  </table>
+  </div>
+   </form>
+
+    <!-- <button>Submit</button>
+    <a href="login.html">Login</a> -->
+  </body>
+</html>

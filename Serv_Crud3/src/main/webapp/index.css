@@ -1,0 +1,297 @@
+@charset "ISO-8859-1";
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+
+      body {
+        background-color: rgb(31,31,31);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin-top: 20px;
+
+        text-align: center;
+        color: white;
+      }
+      .container {
+        margin-top: 30px;
+        width: 90%;
+        height: max-content;
+
+        border: 1px solid rgb(255, 255, 0, 0.3);
+        border-radius: 5px;
+        box-shadow: 0px 0px 25px 1px rgb(255, 255, 255, 0.2);
+        position: absolute;
+        top: 50px;
+        background-color: rgba(85, 73, 73, 0.9);
+      }
+
+      ol {
+        display: flex;
+        list-style: none;
+        background-color: rgb(54, 54, 123);
+        color: rgb(255, 255, 255, 0.9);
+        font-size: 1.2em;
+        border-radius: 5px;
+      }
+
+      ol li {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      ol li:first-of-type {
+        text-transform: uppercase;
+        margin-right: auto;
+      }
+
+      ol li ~ li button {
+        all: unset;
+      }
+
+      ol li ~ li {
+        text-transform: capitalize;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      ol li:last-of-type {
+        background-color: rgb(19, 46, 19);
+      }
+      ol li + li + li {
+        background-color: red;
+      }
+      /* ==============================data show ============== */
+      /* data-show */
+
+      #data {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      #data tr th {
+        text-align: left;
+        background-color: rgb(255, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.8);
+      }
+      #data tr th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 5px 8px;
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+        
+      }
+      #data tr th:last-of-type {
+        text-align: center;
+      }
+      #data tr td:last-of-type {
+        text-align: center;
+      }
+
+      #data tr:first-of-type {
+        background-color: rgb(255, 0, 0, 0.4);
+        color: white;
+      
+      }
+   
+
+      #data tr td {
+        width: 250px;
+       
+      }
+
+      input:disabled {
+        background-color: transparent;
+        border: none;
+        color: white;
+      }
+
+      .inputbg {
+        background-color: rgb(255, 255, 255, 0.8);
+      }
+
+      button {
+        all: unset;
+        padding: 10px;
+        width: 70px;
+        border-radius: 8px;
+        background-color: rgb(41, 41, 116);
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(255, 255, 255, 0.3);
+        cursor: pointer;
+      }
+      input {
+        outline: none;
+        border: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(156, 135, 135);
+      }
+
+      /* ========================= delete ====================== */
+      #pop {
+        width: 400px;
+        height: 130px;
+        background-color: rgb(36, 28, 54);
+        color: white;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        position: fixed;
+        top: 0%;
+        left: 40%;
+        z-index: 90;
+      }
+
+      #pop #yes {
+        margin-top: 20px;
+      }
+
+      button {
+        all: unset;
+        border: 1px solid;
+        padding: 10px;
+        font-size: 1.1em;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button {
+        background-color: rgb(19, 49, 132);
+        color: white;
+      }
+      #pop > button:first-of-type {
+        background-color: rgb(52, 52, 95);
+        color: white;
+        margin-left: 40%;
+        margin-right: 10px;
+      }
+
+      #pop button:last-of-type {
+        background-color: #54162b;
+        color: white;
+      }
+      p {
+        font-size: 1.4em;
+        text-align: center;
+      }
+      .popover {
+        visibility: hidden;
+      }
+ 
+ 
+      /* ===============NEW USER============= */
+      .box2 {
+        width: 600px;
+        /* height: 250px; */
+        height: max-content;
+        background-color: rgb(86, 53, 53);
+        /* background-color: bisque; */
+        border-radius: 5px;
+      }
+
+      .box2 {
+        /* display: none; */
+        position: relative;
+        top: 5px;
+        z-index: -1;
+        transform: scale(0);
+        /* transform: scale(1.1); */
+        transition: all 0.5s;
+      }
+
+      .active {
+        z-index: 0;
+        transform: scale(1.1);
+        transition: all 1s;
+      }
+
+      .con-opacity {
+        opacity: 0.3;
+      }
+
+      /*  */
+
+      .box2 p {
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin: 10px 0px;
+        background-color: rgb(54, 54, 123);
+        color: rgb(255, 255, 255, 0.9);
+        text-decoration: underline;
+        text-decoration-color: red;
+        padding: 10px;
+      }
+
+      #user > tr td:first-of-type {
+        font-weight: bold;
+        font-size: 1em;
+        text-indent: 70px;
+      }
+
+      #user {
+        /* border: 1px solid red; */
+        width: inherit;
+        color: rgb(255, 255, 255, 0.8);
+      }
+
+      #user tr td {
+        border: none;
+        text-align: center;
+      }
+
+      #user tr td input {
+        /* background-color: red; */
+        outline: none;
+        border: none;
+        border: 1px solid rgb(255, 0, 0, 0.5);
+        background-color: rgb(58, 46, 46);
+        color: white;
+        caret-color: white;
+        text-indent: 10px;
+        padding: 6px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      .box2 > button {
+        all: unset;
+        border: 1px solid rgb(255, 255, 255, 0.4);
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 255, 0.2);
+        color: rgb(255, 255, 255, 0.8);
+        margin-left: 300px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+        /* ============================= COLUMN TO SHOW ===================================== */
+      #column-display select {
+        border: none;
+        background-color: rgb(168, 166, 155);
+        padding: 8px;
+        border-radius: 2px;
+        margin: 5px 0px 5px 0px;
+        outline: none;
+        cursor: pointer;
+        
+      }
+      #column-display select option{
+        cursor:pointer;
+      
+      }
+
+      #column-display span {
+        color: white;
+       
+      }
+      
